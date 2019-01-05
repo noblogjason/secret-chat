@@ -22,7 +22,7 @@ config.HTMLDirs.forEach(item => {
 
 const env = process.env.BUILD_MODE.trim();
 let ASSET_PATH = '/'; // dev 环境
-if (env === 'prod') ASSET_PATH = '//abc.com/static/'; // build 时设置成实际使用的静态服务地址
+if (env === 'prod') ASSET_PATH = '/'; // build 时设置成实际使用的静态服务地址
 
 module.exports = {
   entry: Entries,
