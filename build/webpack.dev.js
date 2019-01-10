@@ -32,18 +32,18 @@ module.exports = webpackMerge(webpackBase, {
           }
         ]
       },
-      {
-        test: /\.(js|vue)$/,
-        enforce: 'pre', // 强制先进行 ESLint 检查
-        exclude: /node_modules|lib/,
-        loader: 'eslint-loader',
-        options: {
-          // 启用自动修复
-          fix: true,
-          // 启用警告信息
-          emitWarning: true,
-        }
-      },
+      // {
+      //   test: /\.(js|vue)$/,
+      //   enforce: 'pre', // 强制先进行 ESLint 检查
+      //   exclude: /node_modules|lib/,
+      //   loader: 'eslint-loader',
+      //   options: {
+      //     // 启用自动修复
+      //     fix: true,
+      //     // 启用警告信息
+      //     emitWarning: true,
+      //   }
+      // },
       {
         test: /\.(png|svg|jpg|gif)$/, // 处理图片
         use: {

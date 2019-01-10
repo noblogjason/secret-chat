@@ -7,6 +7,10 @@ module.exports = {
     {
       page: 'chat',
       title: 'secret-chat',
+    },
+    {
+      page: 'snack',
+      title: 'sanck'
     }
   ],
   cssPublicPath: '../',

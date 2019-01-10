@@ -6,6 +6,7 @@ module.exports = {
     "node": true,
     "mocha": true,
   },
+  "parser": 'vue-eslint-parser',
   "extends": [
     "eslint:recommended",
     "plugin:vue/essential"
