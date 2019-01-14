@@ -8,7 +8,8 @@
   "scripts": {
     "dev": "cross-env BUILD_MODE=dev webpack-dev-server ",
     "build": "cross-env BUILD_MODE=prod webpack ",
-    "server": "http-server ./dist -p 8089 -o"
+    "server": "http-server ./dist -p 8089 -o",
+    "send_remote": "bash scripts/send_remote.sh"
   },
   "devDependencies": {
     "autoprefixer": "^8.6.4",
