@@ -27,7 +27,7 @@ class Pos {
   }
 }
 export default {
-  name: 'index',
+  name: 'snackGame',
   data() {
     return {
       cellPix: 25,
@@ -71,7 +71,7 @@ export default {
       return newPos
     },
     checkOutRigion(pos) { // 是否出去游戏区域
-      return pos.x >= this.cellNumber || pos.y >= this.cellNumber
+      return pos.x >= this.cellNumber || pos.x < 0 || pos.y >= this.cellNumber || pps.y < 0
     },
     checkGetFood(pos) {
       return pos.x === this.food.x && pos.y === this.food.y
